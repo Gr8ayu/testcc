@@ -4,9 +4,14 @@ sphinx:
   configuration: docs/conf.py
 
 build:
-  image: testing
+  image: stable
+
+formats: 
+  - pdf
+  - htmlzip
+  
 
 python:
-  version: 3.9
+  version: "3.7"
   install:
     - requirements: requirements/local.txt
